@@ -36,7 +36,7 @@ The address of an account is a base-32 encoded triplet consisting of:
 From this description we see that we can generate a new account offline, there's
 no need to be connected to the network to create an account.
 
-Here is the code generating an address from the public key, [extracted from nem.code](https://github.com/NemProject/nem.core/blob/master/src/main/java/org/nem/core/model/Address.java#L81):
+Here is the code generating an address from the public key, [extracted from nem.core](https://github.com/NemProject/nem.core/blob/master/src/main/java/org/nem/core/model/Address.java#L81):
 
 ``` java
         private static String generateEncoded(final byte version, final byte[] publicKey) {
